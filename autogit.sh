@@ -1,4 +1,3 @@
-git init
 git add -A
 git commit -m "Next step: HTTP Methods"
 git branch -M main
