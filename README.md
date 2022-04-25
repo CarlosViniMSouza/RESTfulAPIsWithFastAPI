@@ -14,6 +14,10 @@
 
 ### 4 - For know more about Thunder Client (Rest Client Test), visit: [Thunder Client](https://www.thunderclient.com/)
 
+### 5.1 - Link for Swagger Docs: http://127.0.0.1:8000/docs
+
+### 5.2 - Link for Redocs: http://127.0.0.1:8000/redoc
+
 ## How to get started this project ?!
 
 ### 1 - For install dependencies: `pip -m install requirements.txt`

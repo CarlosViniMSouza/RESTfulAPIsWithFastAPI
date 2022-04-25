@@ -1,4 +1,4 @@
 git add -A
-git commit -m "Next Step: Swagger Docs and Redoc"
+git commit -m "Next Step: HTTP DELETE Method"
 git push -u origin main
 git status
