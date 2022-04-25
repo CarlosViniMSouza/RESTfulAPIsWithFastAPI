@@ -1,4 +1,4 @@
-![project-layout]("/docs/project-layout.jpg")
+![project-layout](docs/project-layout.jpg)
 
 # [FastAPI Tutorial - Building RESTful APIs with Python](https://www.youtube.com/watch?v=GN6ICac3OXY)
 
