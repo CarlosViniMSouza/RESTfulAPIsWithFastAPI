@@ -12,6 +12,8 @@
 
 ### 3 - For know more about pydantic, visit: [Pydantic Docs](https://pydantic-docs.helpmanual.io/)
 
+### 4 - For know more about Thunder Client (Rest Client Test), visit: [Thunder Client](https://www.thunderclient.com/)
+
 ## How to get started this project ?!
 
 ### 1 - For install dependencies: `pip -m install requirements.txt`
