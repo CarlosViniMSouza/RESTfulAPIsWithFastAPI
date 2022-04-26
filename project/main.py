@@ -48,3 +48,11 @@ async def fetch_users():
 async def register_user(user: User):
     db.append(user)
     return {"id": user.id}
+
+
+@app.delete("/api/v1/users/{id_user}")
+async def delete_user(id_user: UUID):
+    for user in db:
+        if user.id == id_user:
+            db.remove(user)
+            return {"message": f"user of id: {id_user} -> deleted"}
