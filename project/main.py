@@ -3,6 +3,7 @@ from typing import List
 from uuid import UUID
 
 from models import User, Gender, Role
+from project.models import UserPutReq
 
 app = FastAPI()
 
@@ -48,6 +49,20 @@ async def fetch_users():
 async def register_user(user: User):
     db.append(user)
     return {"id": user.id}
+
+
+@app.put("/api/v1/users/{id_user}")
+async def update_user(up_user: UserPutReq, id_user: UUID):
+    for user in db:
+        if (user.id == id_user):
+            if (up_user.first_name is not None):
+                user.first_name = up_user.first_name
+            if (up_user.last_name is not None):
+                user.last_name = up_user.last_name
+            if (up_user.middle_name is not None):
+                user.middle_name = up_user.middle_name
+            if (up_user.role is not None):
+                user.role = up_user.role
 
 
 @app.delete("/api/v1/users/{id_user}")
